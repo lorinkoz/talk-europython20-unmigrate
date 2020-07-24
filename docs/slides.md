@@ -25,21 +25,21 @@ class: middle center
 
 --
 
-```shell
+```bash
 git diff master --name-only | grep migrations
 ```
 
 --
 
-➕
+mental migration name arithmetic.ref[1]
 
-mental migration name arithmetic
+.bottom[
+.footnote[.ref[1] https://adamj.eu/tech/2020/02/24/how-to-disallow-auto-named-django-migrations/]
+]
 
 --
 
-➕
-
-```shell
+```bash
 python manage.py migrate some_app some_migration
 ```
 
@@ -61,14 +61,14 @@ https://pypi.org/project/django-unmigrate
 
 ## The new way
 
-```shell
+```bash
 python manage.py unmigrate master
 python manage.py unmigrate
 ```
 
 --
 
-```shell
+```bash
 python manage.py unmigrate HEAD~12
 python manage.py unmigrate b13553d
 python manage.py unmigrate v1.33.7
@@ -76,15 +76,15 @@ python manage.py unmigrate v1.33.7
 
 --
 
-```shell
+```bash
 python manage.py unmigrate --dry-run
 python manage.py unmigrate --fake
 ```
 
 --
 
-```shell
-python manage.py unmigrate --clean
+```bash
+python manage.py unmigrate --clean    <-- open PR
 ```
 
 ---
