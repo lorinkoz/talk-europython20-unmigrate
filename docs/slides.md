@@ -21,7 +21,7 @@ class: middle center
 
 ---
 
-## The old ways
+## The old way
 
 --
 
